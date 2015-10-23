@@ -1,0 +1,39 @@
+{
+  "name": "observ-listen-if",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Manage an observable listener based on another boolean observable",
+  "license": "MIT",
+  "repository": "bendrucker/observ-listen-if",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "observable",
+    "listen",
+    "if",
+    "conditional",
+    "observ"
+  ],
+  "devDependencies": {
+    "observ": "~0.2.0",
+    "standard": "^4.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "if.js",
+    "index.js",
+    "watch.js"
+  ],
+  "dependencies": {
+    "observ-listen": "~1.0.0",
+    "observ-thunk": "~1.0.0",
+    "once": "~1.3.2",
+    "value-pipe": "~1.0.0"
+  }
+}
