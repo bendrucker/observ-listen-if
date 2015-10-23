@@ -1,7 +1,7 @@
 {
   "name": "observ-listen-if",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Manage an observable listener based on another boolean observable",
   "license": "MIT",
   "repository": "bendrucker/observ-listen-if",
