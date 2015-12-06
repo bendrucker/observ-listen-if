@@ -7,25 +7,21 @@ var once = require('once')
 
 module.exports = function Observer (watch) {
   return function listenIf (condition, value, fn) {
-    var _unlistenValue
+    var unlistenValue
     var onChange = Thunk(function (condition) {
       if (!condition) {
-        return unlisten && unlisten()
+        return unlistenValue && unlistenValue()
       }
-      _unlistenValue = listen(value, fn, watch)
+      unlistenValue = listen(value, fn, watch)
     })
 
     var unlistenCondition = listen(condition, pipe(Boolean, onChange), watch)
 
     return once(unlisten)
 
-    function unlistenValue () {
-      if (_unlistenValue) _unlistenValue()
-    }
-
     function unlisten () {
-      unlistenValue()
-      unlistenCondition()
+      unlistenValue && unlistenValue()
+      unlistenCondition && unlistenCondition()
     }
   }
 }

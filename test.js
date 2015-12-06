@@ -43,3 +43,17 @@ test('watch', function (t) {
   condition.set(false)
   value.set(2) // noop
 })
+
+test('watch - initial false', function (t) {
+  t.plan(1)
+
+  var condition = Observ(false)
+  var value = Observ(0)
+
+  watchIf(condition, value, function (value) {
+    t.equals(value, 1)
+  })
+
+  value.set(1)
+  condition.set(true)
+})
