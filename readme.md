@@ -1,4 +1,4 @@
-# observ-listen-if [![Build Status](https://travis-ci.org/bendrucker/observ-listen-if.svg?branch=master)](https://travis-ci.org/bendrucker/observ-listen-if)
+# observ-listen-if [![Build Status](https://travis-ci.org/bendrucker/observ-listen-if.svg?branch=master)](https://travis-ci.org/bendrucker/observ-listen-if) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/observ-listen-if.svg)](https://greenkeeper.io/)
 
 > Manage an observable listener based on another boolean observable
 
